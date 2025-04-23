@@ -7,8 +7,8 @@ This project focuses on cleaning a raw dataset from the Nashville housing market
 ## Tools Used
 
 - **SQL (MySQL / SQL Server)**: Main tool for querying and transforming the data.
-- **DBMS / Workbench (e.g., MySQL Workbench, DBeaver, SSMS)**: To run and test queries.
-- **Spreadsheet (Optional)**: For additional duplicate checking or visualization.
+- **Workbench**: To run and test queries.
+- **Spreadsheet**: For additional duplicate checking or visualization.
 
 ---
 
@@ -26,7 +26,7 @@ Renamed the original table `nashville housing data for data cleaning` to `nashvi
 - Matched missing addresses using `ParcelID` from duplicate records.
 - Used a self-join to copy existing addresses to null rows.
 
-### 🏙4. Split Property Address into Columns
+### 4. Split Property Address into Columns
 - Separated `PropertyAddress` into:
   - `PropertySplitAddress` (street address)
   - `PropertyCity` (city)
@@ -46,7 +46,7 @@ Renamed the original table `nashville housing data for data cleaning` to `nashvi
 - Used a CTE (`RowNumCTE`) with `ROW_NUMBER()` to identify duplicates based on key columns.
 - Deleted duplicate rows keeping only the first occurrence.
 
-### 🗃8. Dropped Unused Columns
+### 8. Dropped Unused Columns
 - Removed the original `SaleDate` column after converting and storing it as `SaleDateConverted`.
 
 ---
