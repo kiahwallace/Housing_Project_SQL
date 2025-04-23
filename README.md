@@ -12,7 +12,7 @@ This project focuses on cleaning a raw dataset from the Nashville housing market
 
 ---
 
-## 🛠Data Cleaning Tasks Performed
+## Data Cleaning Tasks Performed
 
 ### 1. Table Renaming
 Renamed the original table `nashville housing data for data cleaning` to `nashvillehousing` for simplicity and easier querying.
